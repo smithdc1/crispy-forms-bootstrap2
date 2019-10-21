@@ -74,6 +74,9 @@ class CrispyTestModel(models.Model):
     email = models.CharField(max_length=20)
     password = models.CharField(max_length=20)
 
+    class Meta:
+        app_label = 'testing2'
+
 
 class SampleForm3(forms.ModelForm):
     class Meta:
@@ -132,6 +135,8 @@ class CrispyEmptyChoiceTestModel(models.Model):
         null=True,
         blank=True,
     )
+    class Meta:
+        app_label = 'testing2'
 
 class SampleForm6(forms.ModelForm):
     class Meta:
