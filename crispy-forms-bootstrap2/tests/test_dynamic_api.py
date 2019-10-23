@@ -215,7 +215,7 @@ def test_get_layout_objects():
         Div('password1'),
         'password2',
     )
-    assert layout_3.get_layout_objects(str, max_level=2) == [
+    assert layout_3.get_layout_objects((str,), max_level=2) == [
         [[0], 'email'],
         [[1, 0], 'password1'],
         [[2], 'password2']
