@@ -18,7 +18,7 @@ jobs:
       matrix:
         python-version: [3.5, 3.6, 3.7]
         Django-version: ['>=2.2,<2.3', 3.0b1]
-        Crispy-forms-version: [django-crispy-forms==1.8.0, git+git://github.com/django-crispy-forms/django-crispy-forms.git#egg=django-crispy-forms]
+        Crispy-forms-version: [django-crispy-forms==1.8.0, 'git+git://github.com/django-crispy-forms/django-crispy-forms.git#egg=django-crispy-forms']
         exclude:
           - python-version: 3.5
             Django-version: 3.0b1
