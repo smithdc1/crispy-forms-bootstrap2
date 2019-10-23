@@ -14,14 +14,15 @@ jobs:
 
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 1
+      max-parallel: 4
       matrix:
         python-version: [3.5, 3.6, 3.7]
         Django-version: [2.2.6, 3.0b1]
         Crispy-forms-version: [1.8.0]
         exclude:
           - python-version: 3.5
-            Django-version: ==3.0b1
+            Django-version: 3.0b1
+            Crispy-forms-version: 1.8.0
 
     steps:
     - uses: actions/checkout@v1
