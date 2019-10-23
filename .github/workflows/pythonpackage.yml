@@ -21,7 +21,7 @@ jobs:
         Crispy-forms-version: [1.8.0]
         exclude:
           - python-version: 3.5
-            Django-version: 3.0b1
+            Django-version: ==3.0b1
 
     steps:
     - uses: actions/checkout@v1
