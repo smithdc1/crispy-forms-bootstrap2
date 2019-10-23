@@ -4,5 +4,4 @@ wheel
 pytest
 pytest-cov
 pytest-django
-django
-django-crispy-forms
+
