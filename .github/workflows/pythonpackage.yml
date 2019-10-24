@@ -48,7 +48,8 @@ jobs:
       run: |
         make test
         coverage report -m
-    - name: Codecov
-      uses: codecov/codecov-action@v1.0.3
-      with:
-        token: ${{secrets.CODECOV_TOKEN}} #required
+        codecov --token=${{secrets.CODECOV_TOKEN}} 
+  #  - name: Codecov
+  #    uses: codecov/codecov-action@v1.0.3
+  #    with:
+  #      token: ${{secrets.CODECOV_TOKEN}} #required
