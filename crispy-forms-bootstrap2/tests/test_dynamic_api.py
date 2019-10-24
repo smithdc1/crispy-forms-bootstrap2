@@ -175,12 +175,7 @@ def test_update_attributes_and_wrap_once():
 
     assert isinstance(layout[0], Field)
     assert isinstance(layout[1][0], Field)
-    assert isinstance(layout[1][0][0], 
-                     
-                     
-                     
-                     
-                     )
+    assert isinstance(layout[1][0][0], str)
     assert isinstance(layout[2], Field)
     assert layout[1][0].attrs == {'readonly': True}
     assert layout[0].attrs == {'readonly': True}
@@ -506,4 +501,3 @@ def test__setitem__layout_object():
     layout[0][0] = 'password1'
     assert isinstance(layout[0], Div)
     assert layout[0][0] == 'password1'
-
