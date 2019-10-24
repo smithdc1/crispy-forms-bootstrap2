@@ -175,7 +175,12 @@ def test_update_attributes_and_wrap_once():
 
     assert isinstance(layout[0], Field)
     assert isinstance(layout[1][0], Field)
-    assert isinstance(layout[1][0][0], str)
+    assert isinstance(layout[1][0][0], 
+                     
+                     
+                     
+                     
+                     )
     assert isinstance(layout[2], Field)
     assert layout[1][0].attrs == {'readonly': True}
     assert layout[0].attrs == {'readonly': True}
@@ -215,7 +220,7 @@ def test_get_layout_objects():
         Div('password1'),
         'password2',
     )
-    assert layout_3.get_layout_objects(str, max_level=2) == [
+    assert layout_3.get_layout_objects((str,), max_level=2) == [
         [[0], 'email'],
         [[1, 0], 'password1'],
         [[2], 'password2']
